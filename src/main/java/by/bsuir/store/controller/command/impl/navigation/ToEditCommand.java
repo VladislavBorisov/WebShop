@@ -21,7 +21,7 @@ public class ToEditCommand implements ICommand {
     private static final String ADMIN_EDIT_PAGE = "path.page.admin.edit";
 
     @Override
-    public String execute(HttpServletRequest request) {//TODO
+    public String execute(HttpServletRequest request) {
         String page = null;
         int id = Integer.parseInt(request.getParameter(PRODUCT_ID));
         ProductService productService = ProductServiceImpl.getInstance();

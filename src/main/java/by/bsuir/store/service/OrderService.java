@@ -4,7 +4,7 @@ import by.bsuir.store.domain.Order;
 
 import java.util.List;
 
-public interface OrderService {//TODO Sonar Qube static code analyz
+public interface OrderService {
 
     void create(Order order) throws ServiceException;
 

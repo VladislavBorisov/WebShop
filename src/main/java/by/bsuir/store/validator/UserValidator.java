@@ -26,6 +26,6 @@ public class UserValidator implements Validator<User> {
         if (!validator.isValid(user.getEmail())) {
             return MessageManager.INCORRECT_EMAIL;
         }
-        return null; //TODO make validation with boolean and make a list of messages, right throwing exceptions, close connection in db only with use method not in wrapper, refactor commands, learn about servlets(forward, sendRedirect, solve problem with f5 with sendRedirect), multithreading(locks, synchronized, atomic), collections, interf, abstracts
+        return null;
     }
 }

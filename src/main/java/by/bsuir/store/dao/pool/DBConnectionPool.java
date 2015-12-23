@@ -24,7 +24,7 @@ public final class DBConnectionPool {
     private static final String PASS = DBResourceManager.getValue(DBPropertyName.DB_PASSWORD);
     private static final int SIZE = Integer.parseInt(DBResourceManager.getValue(DBPropertyName.DB_POOLSIZE));
     private static final String ERROR_INFO = "Connection not in the usedConnections";
-    private final BlockingQueue<ConnectionWrapper> availableConnections;//TODO final,
+    private final BlockingQueue<ConnectionWrapper> availableConnections;//
     private final BlockingQueue<ConnectionWrapper> usedConnections;
     private static DBConnectionPool dbConnectionPool;
     private static final Lock lock = new ReentrantLock();
