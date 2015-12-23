@@ -1,0 +1,7 @@
+<fmt:message key="logout" var="logout"/>
+<li>
+    <form action="controller" method="post">
+        <input type="hidden" name="command" value="logout"/>
+        <button type="submit" class="btn btn-primary">${logout}</button>
+    </form>
+</li>

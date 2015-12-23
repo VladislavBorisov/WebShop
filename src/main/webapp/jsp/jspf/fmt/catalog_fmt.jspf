@@ -1,0 +1,8 @@
+<fmt:message key="shop" var="shop"/>
+<fmt:message key="add.product" var="add_product"/>
+<fmt:message key="catalog" var="catalog"/>
+<fmt:message key="basket" var="basket"/>
+<fmt:message key="message.footer" var="copyright"/>
+<fmt:message key="delete" var="delete"/>
+<fmt:message key="my_orders" var="my_orders"/>
+<fmt:message key="product.read-more" var="more"/>

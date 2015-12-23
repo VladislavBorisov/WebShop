@@ -1,0 +1,7 @@
+
+<li>
+  <form action="controller" method="post">
+    <input type="hidden" name="command" value="all_users"/>
+    <button type="submit" class="btn btn-link"><fmt:message key="main.users"/></button>
+  </form>
+</li>

@@ -1,0 +1,9 @@
+<fmt:message key="orders" var="orders"/>
+<fmt:message key="empty" var="empty_order"/>
+<fmt:message key="delete_order" var="delete"/>
+<fmt:message key="product.name" var="name"/>
+<fmt:message key="product.price" var="price"/>
+<fmt:message key="product.description" var="description"/>
+<fmt:message key="product.amount" var="amount"/>
+<fmt:message key="date" var="date"/>
+<fmt:message key="shop" var="shop"/>

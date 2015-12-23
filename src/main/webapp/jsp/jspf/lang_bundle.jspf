@@ -1,0 +1,6 @@
+<c:if test="${sessionScope.locale == 'en' or empty sessionScope.locale}">
+  <fmt:setBundle basename="pagecontent_en_us"/>
+</c:if>
+<c:if test="${sessionScope.locale == 'ru'}">
+  <fmt:setBundle basename="pagecontent_ru_ru"/>
+</c:if>

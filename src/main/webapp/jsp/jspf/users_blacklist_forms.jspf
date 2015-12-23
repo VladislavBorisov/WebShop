@@ -1,0 +1,17 @@
+<c:if test="${users.blackList eq false}">
+    <form action="controller" method="post">
+        <input type="hidden" name="command" value="add_to_blacklist">
+        <input type="hidden" name="id" value="${users.userId}">
+        <button type="submit" class="btn btn-danger">${to_blacklist}</button>
+    </form>
+</c:if>
+<c:if test="${users.blackList eq true}">
+    <form action="controller" method="post">
+        <input type="hidden" name="command" value="remove_from_blackList">
+        <input type="hidden" name="id" value="${users.userId}">
+        <button type="submit" class="btn btn-success">${from_blacklist}</button>
+    </form>
+</c:if>
+
+
+

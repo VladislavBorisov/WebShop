@@ -1,0 +1,16 @@
+<fmt:message key="ru.RU" var="ru_button"/>
+<fmt:message key="en.US" var="en_button"/>
+<li>
+    <form action="controller" method="post">
+        <input type="hidden" name="command" value="language">
+        <input type="hidden" name="locale" value="ru">
+        <button type="submit" class="btn btn-link">${ru_button}</button>
+    </form>
+</li>
+<li>
+    <form action="controller" method="post">
+        <input type="hidden" name="command" value="language">
+        <input type="hidden" name="locale" value="en">
+        <button type="submit" class="btn btn-link">${en_button}</button>
+    </form>
+</li>

@@ -1,0 +1,9 @@
+<fmt:message key="product.name" var="name"/>
+<fmt:message key="product.price" var="price"/>
+<fmt:message key="shop" var="shop"/>
+<fmt:message key="product.description" var="description"/>
+<fmt:message key="product.image" var="image"/>
+<fmt:message key="product.amount" var="amount"/>
+<fmt:message key="product.category" var="category"/>
+<fmt:message key="message.footer" var="copyright"/>
+<fmt:message key="product.edit" var="edit"/>

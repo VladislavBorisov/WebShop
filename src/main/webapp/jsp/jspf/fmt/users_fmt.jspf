@@ -1,0 +1,11 @@
+<fmt:message key="login" var="log"/>
+<fmt:message key="email" var="email"/>
+<fmt:message key="address" var="address"/>
+<fmt:message key="lname" var="lname"/>
+<fmt:message key="fname" var="fname"/>
+<fmt:message key="shop" var="shop"/>
+<fmt:message key="delete" var="delete"/>
+<fmt:message key="blacklist" var="blacklist"/>
+<fmt:message key="to_blacklist" var="to_blacklist"/>
+<fmt:message key="from_blacklist" var="from_blacklist"/>
+<fmt:message key="message.footer" var="copyright"/>

@@ -1,0 +1,9 @@
+<fmt:message key="ru.RU" var="ru_button"/>
+<fmt:message key="en.US" var="en_button"/>
+<fmt:message key="logstore" var="logstore"/>
+<fmt:message key="login" var="log"/>
+<fmt:message key="password" var="pass"/>
+<fmt:message key="Login" var="Log"/>
+<fmt:message key="footer.register" var="register"/>
+<fmt:message key="shop" var="shop"/>
+<fmt:message key="head.login" var="head_login"/>
