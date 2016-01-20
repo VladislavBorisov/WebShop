@@ -7,7 +7,7 @@
     <uri>customtags</uri>
     <tag>
         <name>hello</name>
-        <tag-class>by.bsuir.store.tag.WelcomeTag</tag-class>
+        <tag-class>com.web.shop.tag.WelcomeTag</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <name>locale</name>
