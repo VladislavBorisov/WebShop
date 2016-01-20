@@ -1,15 +1,16 @@
-import by.bsuir.store.dao.DAOException;
-import by.bsuir.store.dao.DAOFactory;
-import by.bsuir.store.dao.UserDAO;
-import by.bsuir.store.dao.pool.ConnectionPoolException;
-import by.bsuir.store.dao.pool.DBConnectionPool;
-import by.bsuir.store.domain.User;
-import by.bsuir.store.util.Coder;
 import org.apache.log4j.Logger;
 import org.junit.AfterClass;
 import org.junit.Assert;
 import org.junit.BeforeClass;
 import org.junit.Test;
+
+import com.web.shop.dao.DAOException;
+import com.web.shop.dao.DAOFactory;
+import com.web.shop.dao.UserDAO;
+import com.web.shop.dao.pool.ConnectionPoolException;
+import com.web.shop.dao.pool.DBConnectionPool;
+import com.web.shop.domain.User;
+import com.web.shop.util.Coder;
 
 public class UserDAOTest {
     private static final Logger LOGGER = Logger.getLogger(UserDAOTest.class);
