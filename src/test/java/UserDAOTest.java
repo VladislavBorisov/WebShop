@@ -62,10 +62,10 @@ public class UserDAOTest {
     public void testUserRegister() {
         userDAO = DAOFactory.getUserDAO();
         User user = new User();
-        user.setLogin("kavlas");
-        user.setEmail("jane.doe@mailinator.com");
-        user.setFirstName("Jane");
-        user.setLastName("Doe");
+        user.setLogin("test1");
+        user.setEmail("test1e@mailinator.com");
+        user.setFirstName("test1");
+        user.setLastName("test1");
         user.setPassword(Coder.hashMD5("hello12345"));
         user.setAddress("California");
 
@@ -74,8 +74,8 @@ public class UserDAOTest {
             int id = user.getUserId();
             Assert.assertNotNull(id);
             User newUser = userDAO.find(id);
-            Assert.assertEquals("Jane", newUser.getFirstName());
-            Assert.assertEquals("jane.doe@mailinator.com", newUser.getEmail());
+            Assert.assertEquals("test1", newUser.getFirstName());
+            Assert.assertEquals("test1@mailinator.com", newUser.getEmail());
             Assert.assertEquals("California", newUser.getAddress());
             userDAO.delete(id);
         } catch (DAOException e) {
@@ -88,11 +88,11 @@ public class UserDAOTest {
     public void testDeleteUser() {
         userDAO = DAOFactory.getUserDAO();
         User user = new User();
-        user.setEmail("sam.mine@gmail.com");
-        user.setLogin("kury");
-        user.setFirstName("Sam");
-        user.setLastName("Bali");
-        user.setPassword(Coder.hashMD5("sambali12345"));
+        user.setEmail("test2@gmail.com");
+        user.setLogin("test2");
+        user.setFirstName("test2");
+        user.setLastName("test2");
+        user.setPassword(Coder.hashMD5("test12345"));
         user.setAddress("Texas");
 
         try {
