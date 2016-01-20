@@ -33,10 +33,10 @@ public class UserDAOTest {
         userDAO = DAOFactory.getUserDAO();
         try {
             User user = userDAO.find(3);
-            Assert.assertEquals("Sergey", user.getFirstName());
-            Assert.assertEquals("Kurilo", user.getLastName());
-            Assert.assertEquals("sergserg", user.getLogin());
-            Assert.assertEquals("sergey.kurilo.96@mail.ru", user.getEmail());
+            Assert.assertEquals("Vladislav", user.getFirstName());
+            Assert.assertEquals("Borisov", user.getLastName());
+            Assert.assertEquals("sherybedrock", user.getLogin());
+            Assert.assertEquals("vab_bedrocksity@abv.bg", user.getEmail());
         } catch (DAOException e) {
             LOGGER.error(e);
         }
@@ -48,10 +48,10 @@ public class UserDAOTest {
         userDAO = DAOFactory.getUserDAO();
         try {
             User user = userDAO.findUserByLoginAndPassword("s", Coder.hashMD5("1"));
-            Assert.assertEquals("Andy", user.getFirstName());
-            Assert.assertEquals("Pitts", user.getLastName());
-            Assert.assertEquals("Chicago", user.getAddress());
-            Assert.assertEquals("mem.pitts@gmail.com", user.getEmail());
+            Assert.assertEquals("test", user.getFirstName());
+            Assert.assertEquals("test", user.getLastName());
+            Assert.assertEquals("test", user.getAddress());
+            Assert.assertEquals("test@gmail.com", user.getEmail());
         } catch (DAOException e) {
             LOGGER.error(e);
         }
