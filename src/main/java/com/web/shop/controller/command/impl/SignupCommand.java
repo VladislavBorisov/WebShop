@@ -34,7 +34,7 @@ public class SignupCommand implements ICommand {
     @Override
     public String execute(HttpServletRequest request) {
         String page = null;
-        Validator validator = new UserValidator();
+        Validator<User> validator = new UserValidator();
         String login = request.getParameter(PARAM_NAME_LOGIN).trim();
         String password = Coder.hashMD5(request.getParameter(PARAM_NAME_PASSWORD));
         String firstName = request.getParameter(PARAM_NAME_FIRST_NAME).trim();

@@ -8,7 +8,7 @@ public class WelcomeTag extends TagSupport {
     private String locale;
     private static final String EN = "en";
     private static final String EN_WELCOME = "Welcome, ";
-    private static final String RU_WELCOME = "Добро пожаловать, ";
+    private static final String BG_WELCOME = "Добре дошли, ";
 
     public void setLocale(String locale) {
         this.locale = locale;
@@ -21,7 +21,7 @@ public class WelcomeTag extends TagSupport {
             if (EN.equalsIgnoreCase(locale) || locale.isEmpty()) {
                 to = EN_WELCOME;
             } else {
-                to = RU_WELCOME;
+                to = BG_WELCOME;
             }
             pageContext.getOut().write(to);
         } catch (IOException e) {

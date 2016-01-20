@@ -79,7 +79,7 @@ public class AddProductCommand implements ICommand {
             return page;
         }
 
-        Validator validator = new ProductValidator();
+        Validator<Product> validator = new ProductValidator();
         Product product = new Product();
         product.setName(name);
         product.setPrice(Double.parseDouble(price));

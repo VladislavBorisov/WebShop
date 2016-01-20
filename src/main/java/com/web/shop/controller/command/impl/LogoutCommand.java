@@ -24,7 +24,8 @@ public class LogoutCommand implements ICommand {
     @Override
     public String execute(HttpServletRequest request) {
         String page = ConfigurationManager.getProperty(INDEX_PAGE);
-        Map<Integer, Integer> map = (Map<Integer, Integer>) request.getSession().getAttribute(MAP_ID_BASKET_AMOUNT);
+        @SuppressWarnings("unchecked")
+		Map<Integer, Integer> map = (Map<Integer, Integer>) request.getSession().getAttribute(MAP_ID_BASKET_AMOUNT);
         if (map == null || map.isEmpty()) {
             request.getSession().invalidate();
         } else {

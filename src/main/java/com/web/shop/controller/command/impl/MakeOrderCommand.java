@@ -29,8 +29,10 @@ public class MakeOrderCommand implements ICommand {
     @Override
     public String execute(HttpServletRequest request) {
         String page = null;
-        List<Product> basket = (List<Product>) request.getSession().getAttribute(BASKET);
-        Map<Integer, Integer> amountMap = (Map<Integer, Integer>) request.getSession().getAttribute(MAP_ID_BASKET_AMOUNT);
+        @SuppressWarnings("unchecked")
+		List<Product> basket = (List<Product>) request.getSession().getAttribute(BASKET);
+        @SuppressWarnings("unchecked")
+		Map<Integer, Integer> amountMap = (Map<Integer, Integer>) request.getSession().getAttribute(MAP_ID_BASKET_AMOUNT);
         User user = (User) request.getSession().getAttribute(USER);
 
         if (basket != null && user != null) {

@@ -1,7 +1,12 @@
 package com.web.shop.dao;
 
 public class DAOException extends Exception {
-    public DAOException() {
+    /**
+	 * Vladislav Borisov
+	 */
+	private static final long serialVersionUID = -7009005002234916482L;
+
+	public DAOException() {
     }
 
     public DAOException(String message) {

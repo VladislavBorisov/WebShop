@@ -1,7 +1,12 @@
 package com.web.shop.service;
 
 public class ServiceException extends Exception {
-    public ServiceException() {
+    /**
+	 * Vladislav Borisov
+	 */
+	private static final long serialVersionUID = -9141340455892598865L;
+
+	public ServiceException() {
     }
 
     public ServiceException(String message) {

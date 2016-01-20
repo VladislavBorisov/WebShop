@@ -78,7 +78,7 @@ public class EditProductCommand implements ICommand {
         }
 
         Product product = new Product(id, name, price, description, category, image, amount);
-        Validator validator = new ProductValidator();
+        Validator<Product> validator = new ProductValidator();
         String validationProductResult = validator.isValid(product);
 
         if (validationProductResult == null) {

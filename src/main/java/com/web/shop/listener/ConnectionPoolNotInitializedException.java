@@ -1,7 +1,12 @@
 package com.web.shop.listener;
 
 public class ConnectionPoolNotInitializedException extends RuntimeException {
-    public ConnectionPoolNotInitializedException() {
+    /**
+	 * Vladislav Borisov
+	 */
+	private static final long serialVersionUID = 7554576154001343494L;
+
+	public ConnectionPoolNotInitializedException() {
         super();
     }
 
